@@ -11,7 +11,6 @@ class InsufficientFundsException(Exception):
 
 
 def withdraw(balance, amount):
-
     if amount > balance:
         raise InsufficientFundsException(amount, balance, "USD", "withdrawal")
 
